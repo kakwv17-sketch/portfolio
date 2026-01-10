@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+        <!-- CSS  -->
+     <style>
+     *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+        /* NAVBAR */
+        nav{
+            background: #610b93;
+            padding: 15px ;
+        }
+         nav ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        nav li{
+            margin: 0 20px;
+        }
+        nav a{
+            color: rgb(9, 9, 9);
+            text-decoration: none;
+            font-weight: bold;
+         }
+          nav a:hover{
+            color: rgb(117, 21, 21);
+        }
+        
+        /* SECTIONS */
+        header, section{
+            padding: 60px 10%;
+            background-color: #d7f5f5;
+        }
+
+            
+            /* TITRES ENCADRÉS */
+            .encadre{
+                border: 2px solid #72260e;
+                border-radius: 10px;
+                padding: 10px 20px;
+                width: fit-content;
+                margin: 20px auto;
+                text-align: center;
+                background-color: #2c3c97;
+            }
+            
+            h1, h2{
+                text-transform: capitalize;
+                margin-top: 20px;}
+                
+                /* TABLEAU */
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th, td{
+                border: 1px solid #000;
+                padding: 10px;
+                text-align: left;
+            }
+            th{
+                background-color: #f2f2f2;
+            }
+            table tr:hover{
+                background-color: #26cbbd;
+            }
+
+            /*FORMULAIRE */
+            form{
+                width:50%;
+                margin: auto;
+                background-color: #72260e;
+                padding: 20px;
+                border-radius:  10px;
+            }
+            input, textarea{
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }       
+            /* BOUTON */
+            button{
+                background-color: #0b938f;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }   
+            button:hover{
+                background-color: #26cbbd;
+            }
+            /* FOOTER */
+            footer{
+                background-color: #0b938f;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+            }
+            /*IMAGES RONDES */
+            Header img{
+                width: 150px;
+                display: flex;  
+                justify-content: center;
+                margin: 40px 0;
+            }
+             form{
+                background:white;
+                border: radius 15px;
+                padding:30px;
+                box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            }
+
+                 </style>
+</head>
+<body>
+    <!--navbar -->
+    <nav> 
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="Resume">Resume</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!--header -->
+    <header id="accueil">
+        <h1><span style="color:brown;"><p style="text-align: center;">WELCOME TO MY PORTFOLIO</p></span></h1>
+        <img src="image.jpg" alt="Ma photo"><br>
+
+         <!--section about -->
+    <section id="about">
+        <div class="encadre">
+            <h2>À propos de moi</h2>
+        <h2><p style="text-align: center;">Je m'appelle Kla Abialy William Kevin Vianney commercant passionné de création digitale et le sport</p></h2><br>
+                Je suis un commerçant et sportif passionné de création digitale. J'apprends à concevoir des sites web attrayants et fonctionnels qui offrent une expérience utilisateur exceptionnelle.<br>
+        <p>Mes compétences incluent le HTML, le CSS et le JavaScript, que j'utilise pour donner vie à mes idées créatives. Je suis toujours à la recherche de nouvelles opportunités pour développer mes compétences et collaborer sur des projets passionnants.</p><br>
+    
+   <!-- SECTION TRAVAIL (TABLEAU) -->
+         <section id="travail">
+            <h2>mes travaux</h2>
+
+            <table border="1">
+                 <tr>
+                    <th>projet</th>
+                    <th>description</th>
+                    <th>Technologies</th>
+                    <th>Année</th>
+                    <th>lien</th>
+                    </tr>
+
+                    <tr>
+                        <td>portefolio personnel</td>
+                        <td>portefolio qui presente mon profil</td>
+                        <td>HTML</td>
+                        <td>2026</td>
+                        <td><a href="#accueil"> voir </a></td>
+                    </tr>
+
+                    <tr>
+                    <td>site web </td>
+                    <td>page web en html</td>
+                    <td>HTML</td>
+                    <td>2025</td>
+                    <td><a href="./index.html">voir le site</a></td>
+                    </tr>
+                    </table>
+                    </section>
+
+    <!-- SECTION CV VIDEO -->
+             <section id="cv">
+                <h2> VIDEO D'ILLUSTRATION</h2>
+                <video width="640" height="360" autoplay>
+                    <source src="./video2.mp4" type="video/mp4" controls> 
+                </video>
+                <a href="https://www.youtube.com/watch?v=hIEZ8xpdBts">Lien vers une vidéo YouTube</a> <br>
+
+    <!-- SECTION CONTACT (FORMULAIRE) -->
+                         <section id="contact">
+                            <h2>contactez moi</h2>
+
+                            <form>
+           
+            <label>Nom :</label>
+            <input type="text" placeholder="Votre nom" required>
+
+            <br><br>
+
+            <label>Email :</label>
+            <input type="email" placeholder="Votre email" required>
+
+            <br><br>
+
+            <label>Votre message :</label>
+            <textarea placeholder="Écrire ici..." required></textarea>
+
+            <br><br>
+
+            <button type="submit">Envoyer</button>
+        </form><br>
+
+
+    
+
+    <!--footer -->
+    <footer>&copy; 2026 MY Portfolio KAKWV. Tous droits réservés.</footer>
+</body>
+</html>
